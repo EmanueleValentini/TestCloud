@@ -12,6 +12,6 @@ import lombok.Setter;
 public class DeviceDto {
 
     private String code;
-    
+
     private boolean activeFlag;
 }
