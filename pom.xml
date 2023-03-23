@@ -13,9 +13,13 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>TestCloud</name>
 	<description>Test Spring Cloud</description>
+	<packaging>pom</packaging>
 	<properties>
 		<java.version>19</java.version>
 	</properties>
+	<modules>
+		<module>management</module>
+	</modules>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
