@@ -8,6 +8,7 @@ import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
 import java.time.LocalDate;
+import java.util.Set;
 
 @Entity
 @Getter
@@ -38,4 +39,11 @@ public class User {
 
     @Column(nullable = false)
     private boolean activeFlag;
+
+    @ManyToOne
+    @JoinColumn(name = "id_area", nullable = false)
+    private Area area;
+
+    @OneToMany(mappedBy = "user")
+    private Set<Device> devices;
 }

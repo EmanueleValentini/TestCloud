@@ -21,8 +21,14 @@ public class Device {
 
     @Column(unique = true, nullable = false)
     private String name;
+
     @Column(unique = true, nullable = false)
     private String code;
+
     @Column(nullable = false)
     private boolean activeFlag;
+
+    @ManyToOne
+    @JoinColumn(name = "id_user", nullable = false)
+    private User user;
 }
