@@ -10,7 +10,7 @@ import javax.persistence.*;
 @Getter
 @Setter
 @NoArgsConstructor
-@Table(name = "Area")
+@Table(name = "area")
 public class Area {
 
     @Id
