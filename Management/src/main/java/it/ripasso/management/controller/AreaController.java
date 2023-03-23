@@ -16,4 +16,3 @@ public interface AreaController {
     @GetMapping("/{id}")
     ResponseEntity<Optional<Area>> findById(@PathVariable("id") Long id);
 }
-aaaaaaaaaaaaaa
