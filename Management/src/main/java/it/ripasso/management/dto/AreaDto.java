@@ -14,6 +14,8 @@ import javax.persistence.Id;
 @NoArgsConstructor
 public class AreaDto {
 
+    private String name;
+
     private String code;
 
     private Boolean activeFlag;

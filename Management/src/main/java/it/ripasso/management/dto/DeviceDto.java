@@ -11,6 +11,7 @@ import lombok.Setter;
 @AllArgsConstructor
 public class DeviceDto {
 
+    private String name;
     private String code;
 
     private boolean activeFlag;
