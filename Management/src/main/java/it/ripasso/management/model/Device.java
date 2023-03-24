@@ -28,13 +28,8 @@ public class Device {
     @Column(nullable = false)
     private boolean activeFlag;
 
-<<<<<<< HEAD
+
     @ManyToOne
     @JoinColumn(name = "id_user")
     private User user;
-=======
-   @ManyToOne
-   @JoinColumn(name = "id_user")
-   private User user;
->>>>>>> deviceBranch
 }
