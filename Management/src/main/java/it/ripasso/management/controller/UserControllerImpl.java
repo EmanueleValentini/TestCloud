@@ -26,8 +26,13 @@ public class UserControllerImpl implements UserController{
     @PostMapping("/{id_area}")
     @Override
     public ResponseEntity<User> save(@RequestBody UserDto userDto,@PathVariable("id_area") Long id_area) {
-        userDto.setId_area(id_area);
-        User userSaved = userService.save(userDto);
+        User userSaved = new User();
+        userSaved.setName(userDto.getName());
+        userSaved.setSurname(userDto.getSurname());
+        userSaved.setBadge(userDto.getBadge());
+        userSaved.setBDay(userDto.getBDay());
+        userSaved.setActiveFlag(userDto.getActiveFlag());
+        userSaved.setEmail(userDto.getEmail());
         return new ResponseEntity<>(userSaved, HttpStatus.CREATED);
     }
 

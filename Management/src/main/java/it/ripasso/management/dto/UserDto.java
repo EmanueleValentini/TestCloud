@@ -30,4 +30,8 @@ public class UserDto {
     private boolean activeFlag;
 
     private long id_area;
+
+    public boolean getActiveFlag() {
+        return activeFlag;
+    }
 }
