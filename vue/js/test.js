@@ -1,4 +1,4 @@
-axios.get()
+axios.get("http://localhost:8080/user/1")
   .then(function (response) {
     // handle success
     console.log(response.data);
