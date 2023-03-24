@@ -21,28 +21,24 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(nullable = false)
     private String name;
 
-    @Column(nullable = false)
     private String surname;
 
-    @Column(unique = true, nullable = false)
+    @Column(unique = true)
     private String badge;
 
-    @Column(unique = true, nullable = false)
+    @Column(unique = true)
     private String email;
 
     @DateTimeFormat(pattern = "yyyy-MM-dd")
-    @Column(nullable = false)
     private LocalDate bDay;
 
-    @Column(nullable = false)
     private boolean activeFlag;
 
-    @ManyToOne
-    @JoinColumn(name = "id_area", nullable = false)
-    private Area area;
+//    @ManyToOne
+//    @JoinColumn(name = "id_area")
+//    private Area area;
 
     @OneToMany(mappedBy = "user")
     private Set<Device> devices;

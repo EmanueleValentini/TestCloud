@@ -11,8 +11,8 @@ import java.util.Optional;
 @RequestMapping("/user")
 public interface UserController {
 
-    @PostMapping()
-    ResponseEntity<User> save(@RequestBody UserDto userDto);
+    @PostMapping("/{id_area}")
+    ResponseEntity<User> save(@RequestBody UserDto userDto,@PathVariable("id_area") Long id_area);
 
     @GetMapping("/{id}")
     ResponseEntity<Optional<User>> findById(@PathVariable("id") Long id);

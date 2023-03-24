@@ -27,6 +27,6 @@ public class Area {
     @Column(nullable = false)
     private Boolean activeFlag;
 
-    @OneToMany(mappedBy = "area")
-    private Set<User> users;
+//    @OneToMany(mappedBy = "area")
+//    private Set<User> users;
 }

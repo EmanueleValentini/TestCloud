@@ -29,6 +29,6 @@ public class Device {
     private boolean activeFlag;
 
     @ManyToOne
-    @JoinColumn(name = "id_user", nullable = false)
+    @JoinColumn(name = "id_user")
     private User user;
 }
