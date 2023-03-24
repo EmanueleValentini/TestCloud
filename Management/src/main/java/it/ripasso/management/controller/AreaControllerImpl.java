@@ -15,7 +15,7 @@ import java.util.Optional;
 public class AreaControllerImpl implements AreaController{
 
     @Autowired
-    private AreaServiceImpl areaService;
+    private AreaService areaService;
 
     @PostMapping()
     @Override

@@ -20,8 +20,4 @@ public class UserDto {
     private LocalDate bDay;
 
     private boolean activeFlag;
-
-    private Area area;
-
-    private Set<Device> devices;
 }
