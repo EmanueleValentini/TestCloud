@@ -36,9 +36,9 @@ public class User {
 
     private boolean activeFlag;
 
-//    @ManyToOne
-//    @JoinColumn(name = "id_area")
-//    private Area area;
+    @ManyToOne
+    @JoinColumn(name = "id_area")
+    private Area area;
 
     @OneToMany(mappedBy = "user")
     private Set<Device> devices;
